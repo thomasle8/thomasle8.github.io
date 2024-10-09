@@ -10,7 +10,7 @@ function promptForName()
 // Part b: Function to enlarge the image when clicked
 function enlargeImage() 
 {
-    let image = document.getElementById('profileImage');
+    let image = document.getElementById('profileImage'); // function finds image by its ID 'profileImage' to select, and enlarge or shrink it
     if (image.style.width === "300px") {
         image.style.width = "500px"; // Enlarge image
     } else {
@@ -26,5 +26,5 @@ function mouseoverHandler(element)
 
 function mouseoutHandler(element) 
 {
-    element.style.backgroundColor = ""; // Restore default background color
+    element.style.backgroundColor = ""; // Restore background color when not hovering
 }
