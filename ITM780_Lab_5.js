@@ -18,7 +18,7 @@ function enlargeImage()
     }
 }
 
-// Part d: Function to handle mouseover and mouseout events for navigation items
+// Part c and d: Function to handle mouseover and mouseout events for navigation items
 function mouseoverHandler(element) 
 {
     element.style.backgroundColor = "white"; // Change background color on hover
