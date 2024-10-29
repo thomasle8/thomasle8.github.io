@@ -6,11 +6,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="ITM780_Lab_5.js" defer></script>
 </head>
-<body>
+<body>  
     <main>
         <div>
             <h1>Thomas Hoang Nguyen Le</h1>
             <hr>
+
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">About</a></li>
+                    <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
+                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+                <img src="Thomas Le's Image.jpg" id="profileImage" alt="Thomas Le's Profile Image" onclick="enlargeImage()" style="width: 300px;">
+
+            </div>
 
             <h2>Education</h2>
             <ul>
@@ -25,32 +38,40 @@
         <hr>
 
         <div>
-            <h2>Courses</h2>
-            <ol>
-                <h3><li>ITM780: Web Design and Management</li></h3>
+            <h2>Program</h2>
+            <ul>
                 <dl>
-                    <p>This course provides knowledge and skills for designing and managing effective websites for businesses to showcase their experience.</p>
-                    <h3><li>ITM752: Data Visualization</li></h3>
-                    <p>The course focuses on creating informative displays of data and teaches how to present them effectively to audiences to support decision-making.</p>
-                    <h3><li>ITM707: Strategy, Management and Acquisition</li></h3>
-                    <p>The course focuses on the issues and approaches towards managing the information systems function in organization.</p>
-                    <h3><li>ITM750: IS Project Management</li></h3>
-                    <p>This course provides a deeper insight of the tools and techniques of project management.</p>
-                    <h3><li>ITM760: Big Data Analytics</li></h3>
-                    <p>The course focuses on business analytics and data mining with an emphasis on Big Data.</p>
-                    <h3><li>ITM200: Fundamentals of Programming (Completed)</li></h3>
+                    <h3><li>Business Technology Management</li></h3>                
+                        <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
+                            to prepare one to be able to communicate these effectively in a real business setting.</p>
+                </dl>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <h2> Completed Course</h2>
+            <ul>
+                <dl>
+                    <h3><li>ITM200: Fundamentals of Programming</li></h3>
                     <p>This course proved to be very easy to complete and useful as it opened many more career opportunities.</p>
                 </dl> 
-            </ol>
+            </ul>
         </div>
         <hr>
         
         <h2>Educational Awards</h2>
         <div>
-            <ul>
-                <h3><li>Renewable Entrance Scholarship</li></h3>
-            </ul>
+            <ol>
+                <dl>
+                    <h3><li>Renewable Entrance Scholarship</li></h3>
+                    <p>Issued by Ted Rogers School of Management at Toronto Metropolitan University - July 2021</p>
+                    <h3><li>Ontario Scholar Award</li></h3>
+                    <p>Issued by Northern Secondary School - June 2021</p>
+                </dl>
+            </ol>
         </div>
+        
         <hr>
 
         <h2>Extra-curricular Activities</h2>
@@ -59,68 +80,11 @@
         </ul>
 
         <hr>
-
-        <!-- Part a: Button to prompt for user's name -->
-        <button onclick="promptForName()">Enter Your Name</button>
-        <div id="output"></div>
-
-        <!-- Part b: Clickable image -->
-        <div>
-            <img src="Thomas Le's Image.jpg" id="profileImage" onclick="enlargeImage()" style="width: 300px;">
+        
+        <div id="buttonContainer">
+            <button onclick="promptForName()">Enter Your Name</button>
+            <div id="output"></div>
         </div>
-
-        <!-- Part c and d: Navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="https://www.torontomu.ca/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Alma Mater</a></li> 
-                <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
-                <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <hr>
-
-        <!-- New Form Section for Lab Assignment -->
-        <section>
-            <h2>Contact Form</h2>
-            <form id="userForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-
-                <p>Gender:</p>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-                <label><input type="radio" name="gender" value="other"> Other</label>
-
-                <p>Subscribe to newsletters:</p>
-                <label><input type="checkbox" id="subscribe" name="subscribe"> Yes, sign me up!</label>
-
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="Canada">Canada</option>
-                    <option value="USA">USA</option>
-                    <option value="UK">UK</option>
-                </select>
-
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="1" max="120">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
-
-                <button type="button" onclick="submitForm()">Submit</button>
-                <button type="reset">Clear</button>
-            </form>
-        </section>
-        
-        <hr>
-        
     </main>
     
     <footer>
@@ -128,7 +92,6 @@
             <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
         </div>
         <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
-    
     </footer>
 </body>
 </html>
