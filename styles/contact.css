@@ -53,6 +53,21 @@ nav ul {
     gap: 20px; /* Adds spacing between the items */
 }
 
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0073e6; /* Change color on hover */
+}
+
+
 /* Footer */
 footer {
     text-align: center;
