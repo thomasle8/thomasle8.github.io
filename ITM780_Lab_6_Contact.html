@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - Thomas Le's Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/contact.js" defer></script> <!-- Separate JavaScript file for contact page -->
+</head>
+<body>
+    <header>
+        <h1>Thomas Hoang Nguyen Le</h1>
+        <nav>
+            <ul>
+                <li><a href="https://thomasle8.github.io/">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Add other menu items as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+                <p>Gender:</p>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+
+                <p>Subscribe to newsletters:</p>
+                <label><input type="checkbox" id="subscribe" name="subscribe"> Yes, sign me up!</label>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
+    </footer>
+</body>
+</html>
