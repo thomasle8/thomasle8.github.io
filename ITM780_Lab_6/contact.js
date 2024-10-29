@@ -1,24 +1,43 @@
-// Function to handle form submission
+// Function to capture form data and save it to local storage
 function submitForm() {
-    // Collect data from the form
+    // Capture form input values
+    const firstName = document.getElementById('f-name').value;
+    const lastName = document.getElementById('l-name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    const inquiryType = Array.from(document.querySelectorAll('input[name="inquiry_type"]:checked')).map(cb => cb.value);
+    const contactMethod = document.querySelector('input[name="contact_method"]:checked')?.value;
+    const country = document.getElementById('country').value;
+    const age = document.getElementById('age').value;
+    const dob = document.getElementById('dob').value;
+
+    // Create an object to store the data
     const formData = {
-        name: document.getElementById('name').value,
-        comments: document.getElementById('comments').value,
-        gender: document.querySelector('input[name="gender"]:checked')?.value,
-        subscribe: document.getElementById('subscribe').checked,
-        country: document.getElementById('country').value,
-        age: document.getElementById('age').value,
-        email: document.getElementById('email').value,
-        dob: document.getElementById('dob').value
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        message: message,
+        contactMethod: contactMethod,
+        inquiryType: inquiryType,
+        country: country,
+        age: age,
+        dob: dob
     };
 
-    // Save data to local storage
+    // Store the object in local storage as a JSON string
     localStorage.setItem('contactFormData', JSON.stringify(formData));
-    alert("Your contact information has been saved!");
+
+    // Confirm to the user that data has been saved
+    alert("Your form data has been saved!");
 }
 
-// Optional: Clear data from local storage if needed
-function clearLocalStorage() {
+// Clear both form fields and local storage data when the reset button is clicked
+function clearFormData() {
+    document.getElementById('contactForm').reset();
     localStorage.removeItem('contactFormData');
-    alert("Local storage data cleared!");
+    alert("Form data has been cleared!");
 }
+
+
