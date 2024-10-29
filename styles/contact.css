@@ -22,4 +22,11 @@
     border-radius: 4px;
 }
 
-
+/* Navigation Menu Features */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds spacing between the items */
+}
