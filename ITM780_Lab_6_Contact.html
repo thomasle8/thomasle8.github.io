@@ -3,37 +3,43 @@
 <head>
     <title>Contact - Thomas Le's Portfolio</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <script src="scripts/contact.js" defer></script> <!-- Separate JavaScript file for contact page -->
 </head>
 <body>
     <header>
         <h1>Thomas Hoang Nguyen Le</h1>
         <nav>
-            <ul>
-                <li><a href="https://thomasle8.github.io/">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Add other menu items as needed -->
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">About</a></li>
+                    <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
+                    <li><a href="https://thomasle8.github.io/ITM780_Lab_6_Contact.html" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
     <main>
         <section>
             <h2>Contact Me</h2>
             <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="fname">First Name:</label>
+                <input type="text" id="f-name" name="f_name" required>
 
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="l-name" name="l_name" required>
 
-                <p>Gender:</p>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-                <label><input type="radio" name="gender" value="other"> Other</label>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <p>Subscribe to newsletters:</p>
-                <label><input type="checkbox" id="subscribe" name="subscribe"> Yes, sign me up!</label>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+                <p>What type of inquiry do you have?</p>
+                <label><input type="checkbox" name="inquiry_type" value="general"> General Inquiry</label>
+                <label><input type="checkbox" name="inquiry_type" value="support"> Partnership Inquiry</label>
+                <label><input type="checkbox" name="inquiry_type" value="feedback"> Feedback</label>
+
 
                 <label for="country">Country:</label>
                 <select id="country" name="country">
