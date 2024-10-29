@@ -27,7 +27,7 @@ function submitForm() {
     };
 
     // Store the object in local storage as a JSON string
-    localStorage.setItem('contactFormData', JSON.stringify(formData));
+    localStorage.setItem('formData', JSON.stringify(formData));
 
     // Confirm to the user that data has been saved
     alert("Your form data has been saved!");
