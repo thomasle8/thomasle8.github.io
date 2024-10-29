@@ -1,0 +1,46 @@
+
+body { font-family: 'Arial', sans-serif; font-size: 12pt; background-color: #E6F2FF;
+color: #333333; margin: 20pt; }
+
+h1 { font-family: 'Georgia', serif; font-size: 28pt; color: #003366;
+font-weight: bold; }
+
+h2 { font-family: 'Verdana', sans-serif; font-size: 24pt; color: #336699;
+font-weight: bold; }
+
+h3 { font-family: 'Arial', sans-serif; font-size: 20pt; color: #6699CC; 
+font-weight: normal; }
+
+p { font-family: 'Tahoma', sans-serif; font-size: 14pt; color: #444444;
+line-height: 1.6; }
+
+a { font-family: 'Courier New', monospace; font-size: 13pt; color: #008080;
+text-decoration: none; }
+
+a:hover { color: #005757; text-decoration: underline; }
+
+/* Styling specific to the contact form */
+#contactForm {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
