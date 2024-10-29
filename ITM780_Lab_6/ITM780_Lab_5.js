@@ -1,4 +1,4 @@
-// Part a: Function to prompt the user for their name and display it in the output div
+// Function to prompt the user for their name and display it in the output div
 function promptForName() 
 {
     let name = prompt("Please enter your name:");
@@ -7,7 +7,7 @@ function promptForName()
     }
 }
 
-// Part b: Function to enlarge the image when clicked
+// Function to enlarge the image when clicked
 function enlargeImage() 
 {
     let image = document.getElementById('profileImage'); // function finds image by its ID 'profileImage' to select, and enlarge or shrink it
@@ -18,7 +18,7 @@ function enlargeImage()
     }
 }
 
-// Part c and d: Function to handle mouseover and mouseout events for navigation items
+// Function to handle mouseover and mouseout events for navigation items
 function mouseoverHandler(element) 
 {
     element.style.backgroundColor = "white"; // Change background color on hover
