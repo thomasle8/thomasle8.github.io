@@ -1,8 +1,9 @@
+/* Content Features */
 
 body { font-family: 'Arial', sans-serif; font-size: 12pt; background-color: #E6F2FF;
 color: #333333; margin: 20pt; }
 
-h1 { font-family: 'Georgia', serif; font-size: 28pt; color: #003366;
+h1 { text-align: center; font-family: 'Georgia', serif; font-size: 28pt; color: #003366;
 font-weight: bold; }
 
 h2 { font-family: 'Verdana', sans-serif; font-size: 24pt; color: #336699;
@@ -19,7 +20,58 @@ text-decoration: none; }
 
 a:hover { color: #005757; text-decoration: underline; }
 
-/* Styling specific to the contact form */
+/* Image Features */
+
+img {display: block;
+    margin: 0 auto;
+}
+
+/* Navigation Menu Features */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds spacing between the items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0073e6; /* Change color on hover */
+}
+
+/* Button Features */
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically if needed */
+    margin-top: 20px; /* Optional: adds spacing from the top */
+}
+
+#output {
+    margin-top: 10px; /* Adds spacing between button and output */
+    text-align: center; /* Centers text within the output div */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2; /* Optional */
+}
+
+/* Contact Form Features */
 #contactForm {
     margin: 20px auto;
     padding: 20px;
