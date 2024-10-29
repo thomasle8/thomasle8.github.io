@@ -1,0 +1,25 @@
+/* Contact Form Features */
+#contactForm {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
