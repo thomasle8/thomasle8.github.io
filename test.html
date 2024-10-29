@@ -1,0 +1,44 @@
+<form id="userForm">
+    <!-- Single-line text input (1) -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <!-- Multiple-line text area (2) -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  
+    <!-- Radio buttons (3) -->
+    <p>Gender:</p>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="other"> Other</label>
+  
+    <!-- Checkbox (4) -->
+    <p>Subscribe to newsletters:</p>
+    <label><input type="checkbox" id="subscribe" name="subscribe"> Yes, sign me up!</label>
+  
+    <!-- Dropdown select (5) -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="Canada">Canada</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+    </select>
+  
+    <!-- Number input (6) -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120">
+  
+    <!-- Email input (7) -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <!-- Date input (8) -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+  
+    <!-- Submit and Clear buttons -->
+    <button type="button" onclick="submitForm()">Submit</button>
+    <button type="reset">Clear</button>
+  </form>
+  
