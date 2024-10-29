@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thomas Le's Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="ITM780_Lab_5.js" defer></script>
+</head>
+<body>  
+    <main>
+        <div>
+            <h1>Thomas Hoang Nguyen Le</h1>
+            <hr>
+
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">About</a></li>
+                    <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
+                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+                <img src="Thomas Le's Image.jpg" id="profileImage" alt="Thomas Le's Profile Image" onclick="enlargeImage()" style="width: 300px;">
+
+            </div>
+
+            <h2>Education</h2>
+            <ul>
+                <h3><li>Toronto Metropolitan University</li></h3>
+                <dl>
+                    <p>September 2021 - <strong>Present</strong></p>
+                    <h3><li>Northern Secondary School</li></h3>
+                    <p>September 2017 - June 2021</p>
+                </dl>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <h2>Program</h2>
+            <ul>
+                <dl>
+                    <h3><li>Business Technology Management</li></h3>                
+                        <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
+                            to prepare one to be able to communicate these effectively in a real business setting.</p>
+                </dl>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <h2> Completed Course</h2>
+            <ul>
+                <dl>
+                    <h3><li>ITM200: Fundamentals of Programming</li></h3>
+                    <p>This course proved to be very easy to complete and useful as it opened many more career opportunities.</p>
+                </dl> 
+            </ul>
+        </div>
+        <hr>
+        
+        <h2>Educational Awards</h2>
+        <div>
+            <ol>
+                <dl>
+                    <h3><li>Renewable Entrance Scholarship</li></h3>
+                    <p>Issued by Ted Rogers School of Management at Toronto Metropolitan University - July 2021</p>
+                    <h3><li>Ontario Scholar Award</li></h3>
+                    <p>Issued by Northern Secondary School - June 2021</p>
+                </dl>
+            </ol>
+        </div>
+        
+        <hr>
+
+        <h2>Extra-curricular Activities</h2>
+        <ul>
+            <h3><li>Karate Club</li></h3>
+        </ul>
+
+        <hr>
+        
+        <div id="buttonContainer">
+            <button onclick="promptForName()">Enter Your Name</button>
+            <div id="output"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <div>
+            <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
+        </div>
+        <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
+    </footer>
+</body>
+</html>
