@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 6</title>
+	<script src="main.js"></script>
+</head>
+<body>
+	
+<div>
+	
+	<!-- Remember, for your assignment, you need 8 DISTINCT form elements (checkboxes, radiobuttons etc.).
+         Any multiples of the same element (ex. 2 radio buttons) counts as one element.
+         Please make a comment at the beginning of your page listing which 8 distinct types you used, so I
+         can test your elements and confirm you get the full marks.
+
+		ex. 1) text input
+			2) password
+			3) checkbox etc
+   -->
+	
+<form id="myform">
+	 <p>
+	   <input id="username" type="text" value="abc"> text 
+	 </p>
+	 <p>
+	   <input type="password" value="abc"> password 
+	 </p>
+	 <p>
+	   <input type="checkbox">
+	   <input type="checkbox" checked> checkbox
+	 </p>
+	 <p>
+	   <input type="radio" value="A" name="choice">
+	   <input type="radio" value="B" name="choice" checked> radio buttons 
+	 </p>
+	 <p>
+ <input type="submit" value="Submit"> 
+	  <input type="reset">
+	<input type="button" onclick="alert('Hello World!')" value="Click Me!"> 
+	 </p>
+	</form>
+	
+	<!-- Step B. Note: Here we're just using a singular element, so we don't need a form.
+       However, in general, I recommend using one form, because when you submit the form data for one form,
+         it will redirect your user, so the second form may never be filled, but you can use multiple if you need to -->
+	<input type="text" id = "myinput" oninput="inputHandler()">
+	<!-- Take user input above and display below (see main.js for inputhandler()) -->
+	<p id="emptyParagraph">Dynamically change on webpage input without prompt</p>
+	
+	<div>
+	<p> select element
+	 <select name="cars">
+	  <option value="volvo">Volvo</option>
+	  <option value="benz">Mercedes-Benz</option>
+	  <option value="honda">Honda</option>
+	  <option value="volkswagen">Volkswagen</option>
+	 </select>
+	</p>
+	 <textarea name="message" rows="10" cols="30">
+		The cat was playing in the garden.
+	 </textarea> 
+	</div>	
+	
+
+</div><br>
+
+	<!-- Third Form Example (not in lab questions) -->
+	
+	<!-- Notice what happens to the form elements when they are not grouped by parapgraph, div, section or some other element-->
+<div>
+<form id="form2">
+	<!-- Recall that id is a unique attribute. If creating more than one form, the id must be given a different name -->
+	   <input id="username2" type="text" value="abc"> text 
+	<!-- type attributes don't change. Value is just placeholder text so you can name it anything -->
+	   <input type="password" value="abc"> password 
+	   <input type="checkbox">
+	   <input type="checkbox" checked> checkbox
+	   <input type="radio" value="A" name="choice">
+	   <input type="radio" value="B" name="choice" checked> radio buttons 
+	  <input type="submit" value="Submit">
+	  <input type="reset">
+	  <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+</form>
+</div>
+	
+</body>
+</html>
