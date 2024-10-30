@@ -17,7 +17,6 @@
     <title>Contact - Thomas Le's Portfolio</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/contact.css">
-    <script src="scripts/contact.js" defer></script> 
 </head>
 <body>
         <div>
@@ -39,7 +38,7 @@
 
         <div>
             <h2>Contact Me</h2>
-            <form id="contactForm">
+            <form id="contactForm" onsubmit="myfunc(event)">
                 
                 <div>
                     <p>Personal Information:</p>
@@ -100,12 +99,38 @@
                     <p>Date of Birth:</p>
                     <input type="date" id="dob" name="dob">
                 </div>
-                <div>
-                    <button type="button" onclick="submitForm()">Submit</button>
-                    <button type="reset">Clear</button>
-                </div>
-    
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Clear" />
             </form>
+
+            <script type="text/javascript">
+                function myfunc(event) {
+                    event.preventDefault();
+
+                    var firstName = document.getElementById('f-name').value;
+                    var lastName = document.getElementById('l-name').value;
+                    var email = document.getElementById('email').value;
+                    var phone = document.getElementById('phone').value;
+                    var message = document.getElementById('message').value;
+                    var inquiryType = Array.from(document.querySelectorAll('input[name="inquiry_type"]:checked')).map(cb => cb.value);
+                    var contactMethod = document.querySelector('input[name="contact_method"]:checked')?.value;
+                    var country = document.getElementById('country').value;
+                    var age = document.getElementById('age').value;
+                    var dob = document.getElementById('dob').value;
+
+                    // Store form input values to local storage
+                    localStorage.setItem("firstName", firstName);
+                    localStorage.setItem("lastName", lastName);
+                    localStorage.setItem("email", email);
+                    localStorage.setItem("phone", phone);
+                    localStorage.setItem("message", message);
+                    localStorage.setItem("inquiryType", JSON.stringify(inquiryType)); // Store as JSON string
+                    localStorage.setItem("contactMethod", contactMethod);
+                    localStorage.setItem("country", country);
+                    localStorage.setItem("age", age);
+                    localStorage.setItem("dob", dob);
+                }
+            </script>
         </div>
 
     <footer>
