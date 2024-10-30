@@ -1,3 +1,16 @@
+<!-- "Personal Information" consists of 2 text inputs,
+ 1 email input, 1 phone input, and 1 textarea input-->
+
+<!-- "Type of Inquiry" consists of 3 checkboxes-->
+
+<!-- "Preferred Contact Method" consists of 3 radio buttons-->
+
+<!-- "Country" consists of 1 select dropdown-->
+
+<!-- "Age" consists of 1 number input-->
+
+<!-- "Date of Birth" consists of 1 date input-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +20,6 @@
     <script src="scripts/contact.js" defer></script> 
 </head>
 <body>
-    <main>
         <div>
         <h1>Thomas Hoang Nguyen Le</h1>
         <hr>
@@ -50,7 +62,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" cols="50"></textarea>
                 </div>
-
+                                
                 <div>
                     <p>Preferred Contact Method:</p>
                     <label>
@@ -63,9 +75,9 @@
                     <input type="radio" name="contact_method" value="text"> Text Message
                     </label>
                 </div>
-
+                
                 <div>
-                    <p>Type of Inquiry:</p>
+                    <p>Type of Inquiry:</p> 
                     <label><input type="checkbox" name="inquiry_type" value="general"> General Inquiry</label>
                     <label><input type="checkbox" name="inquiry_type" value="support"> Partnership Inquiry</label>
                     <label><input type="checkbox" name="inquiry_type" value="feedback"> Feedback</label>
@@ -95,8 +107,6 @@
     
             </form>
         </div>
-    </main>
-
     <footer>
         <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
     </footer>
