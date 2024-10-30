@@ -1,5 +1,5 @@
 // Function to capture form data and save it to local storage
-function submit() {
+function submitForm() {
     // Capture form input values
     var firstName = document.getElementById('f-name').value;
     var lastName = document.getElementById('l-name').value;
