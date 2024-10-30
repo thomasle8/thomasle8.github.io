@@ -29,56 +29,69 @@
             <h2>Contact Me</h2>
             <form id="contactForm">
                 <div>
-                    <p>Personal Information:</p>
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="f-name" name="f_name" required>
+                    <div>
+                        <p>Personal Information:</p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="f-name" name="f_name" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="l-name" name="l_name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
 
-                    <label for="lname">Last Name:</label>
-                    <input type="text" id="l-name" name="l_name" required>
+                    <div>
+                        <p>Preferred Contact Method:</p>
+                        <label>
+                        <input type="radio" name="contact_method" value="email" required> Email
+                        </label>
+                        <label>
+                        <input type="radio" name="contact_method" value="phone"> Phone
+                        </label>
+                        <label>
+                        <input type="radio" name="contact_method" value="text"> Text Message
+                        </label>
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <div>
+                        <p>Type of Inquiry:</p>
+                        <label><input type="checkbox" name="inquiry_type" value="general"> General Inquiry</label>
+                        <label><input type="checkbox" name="inquiry_type" value="support"> Partnership Inquiry</label>
+                        <label><input type="checkbox" name="inquiry_type" value="feedback"> Feedback</label>
+                    </div>
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+                    <div>
+                        <p>Country:</p>
+                        <select id="country" name="country">
+                            <option value="Canada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
-                
-
-                
-                    <p>Preferred Contact Method:</p>
-                    <label>
-                    <input type="radio" name="contact_method" value="email" required> Email
-                    </label>
-                    <label>
-                    <input type="radio" name="contact_method" value="phone"> Phone
-                    </label>
-                    <label>
-                     <input type="radio" name="contact_method" value="text"> Text Message
-                    </label>
-
-                
-                    <p>Type of Inquiry:</p>
-                    <label><input type="checkbox" name="inquiry_type" value="general"> General Inquiry</label>
-                    <label><input type="checkbox" name="inquiry_type" value="support"> Partnership Inquiry</label>
-                    <label><input type="checkbox" name="inquiry_type" value="feedback"> Feedback</label>
-
-                    <p>Country:</p>
-                    <select id="country" name="country">
-                        <option value="Canada">Canada</option>
-                        <option value="USA">USA</option>
-                        <option value="UK">UK</option>
-                    </select>
-
-                    <p>Age:</p>
-                    <input type="number" id="age" name="age" min="1" max="120">
-
-                    <p>Date of Birth:</p>
-                    <input type="date" id="dob" name="dob">
-
-                    <button type="button" onclick="submitForm()">Submit</button>
-                    <button type="reset">Clear</button>
+                    <div>
+                        <p>Age:</p>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                    </div>
+                    <div>
+                        <p>Date of Birth:</p>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div>
+                        <button type="button" onclick="submitForm()">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
                 </div>
             </form>
         </div>
