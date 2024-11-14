@@ -111,6 +111,7 @@
             <script type="text/javascript">
                 function myfunc(event) {
                     event.preventDefault();
+                    
 
                     var firstName = document.getElementById('f-name').value;
                     var lastName = document.getElementById('l-name').value;
@@ -134,6 +135,8 @@
                     localStorage.setItem("country", country);
                     localStorage.setItem("age", age);
                     localStorage.setItem("dob", dob);
+
+                    document.getElementById("contactForm").reset();
                 }
             </script>
         </div>
