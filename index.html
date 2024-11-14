@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="ITM780_Lab_5.js" defer></script>
 </head>
-<body>  
-    <main>
-        <div>
-            <h1>Thomas Hoang Nguyen Le</h1>
-            <hr>
-        </div>
 
+<body>  
+    <div class="main-content" id="content">
+        <h1>Thomas Hoang Nguyen Le</h1>
+        <hr>
+    
         <div>
             <nav>
                 <ul>
@@ -27,7 +26,48 @@
 
         <div>
             <img src="images/Thomas Le's Image.jpg" id="profileImage" alt="Thomas Le's Profile Image" onclick="enlargeImage()" style="width: 300px;">
+            <!--Button to enter name-->
+            <div id="buttonContainer">
+                <button onclick="promptForName()">Enter Your Name</button>
+                <div id="output"></div>
+            </div>
             <hr>
+        </div>
+        
+        <section>
+            <h2>Audio File</h2>
+            <article>
+                <audio controls="controls" src="ITM780_Lab_8.m4a">
+                    Your browser does not support the HTML5 audio element.
+                </audio>
+                <figcaption>
+                    Le, T. (2024). <em>ITM780_Lab_8</em> [Audio file].
+                </figcaption>
+            </article>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Photo Gallery</h2>
+            <figure>
+                <img src="quarter.jpg" alt="A close-up of a quarter." id="image1" style="width: 300px";>
+                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="loonie.jpg" alt="A close-up of a loonie." id="image2" style="width: 300px";>
+                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="toonie.jpg" alt="A close-up of a toonie." id="image3" style="width: 300px";>
+                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+            </figure> 
+
+        </section>
+
+        <div id="altTextButttonContainer">
+            <button onclick="displayAltText()">Show Image Descriptions</button>
         </div>
 
         <div>
@@ -42,22 +82,21 @@
             </ul>
             <hr>
         </div>
-           
 
         <div>
             <h2>Program</h2>
             <ul>
                 <dl>
                     <h3><li>Business Technology Management</li></h3>                
-                        <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
-                            to prepare one to be able to communicate these effectively in a real business setting.</p>
+                    <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
+                        to prepare one to be able to communicate these effectively in a real business setting.</p>
                 </dl>
             </ul>
             <hr>
         </div>
 
         <div>
-            <h2> Completed Course</h2>
+            <h2>Completed Course</h2>
             <ul>
                 <dl>
                     <h3><li>ITM200: Fundamentals of Programming</li></h3>
@@ -81,24 +120,31 @@
         </div>
         
         <div>
-        <h2>Extra-curricular Activities</h2>
-        <ul>
-            <h3><li>Karate Club</li></h3>
-        </ul>
-        <hr>
+            <h2>Extra-curricular Activities</h2>
+            <ul>
+                <h3><li>Karate Club</li></h3>
+            </ul>
+            <hr>
         </div>
 
-        <div id="buttonContainer">
-            <button onclick="promptForName()">Enter Your Name</button>
-            <div id="output"></div>
-        </div>
-    </main>
+        <footer>
+            <div>
+                <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
+            </div>
+            <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
+        </footer>
+    </div>
     
-    <footer>
-        <div>
-            <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
-        </div>
-        <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
-    </footer>
+    <!--Buttons to control font size-->
+    <div id="fontSizeButtons">
+        
+        <button onclick="changeFontSize (2)">Increase Font Size</button>
+        <button onclick="changeFontSize (-2)">Decrease Font Size</button>
+    </div>
+
+    <!--Button to toggle color scheme-->
+    <div id="colorSchemeButton">
+        <button onclick="toggleColorScheme()">Toggle High-Contrast Color Scheme</button>
+    </div>
 </body>
 </html>
