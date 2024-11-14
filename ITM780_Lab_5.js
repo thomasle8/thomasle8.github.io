@@ -43,11 +43,15 @@ function changeFontSize(sizeChange) {
 // Function to toggle color scheme
 function toggleColorScheme() {
     var content = document.getElementById('content');
-    if (content.style.backgroundColor === 'yellow' && content.style.color === 'blue') {
+    if (content.style.backgroundColor === 'yellow' && content.style.color === 'blue') 
+        {
         // Set to default colors
         content.style.backgroundColor = '';
         content.style.color = '';
-    } else {
+    } 
+    
+    else 
+    {
         // Set to high-contrast, colorblind-friendly colors
         content.style.backgroundColor = 'yellow';  // Light background
         content.style.color = 'blue';  // Dark text
@@ -61,7 +65,7 @@ function displayAltText() {
     const image2Alt = document.getElementById('image2').alt;
     const image3Alt = document.getElementById('image3').alt;
 
-    // Display alt-text using alert
+    // Display alt-text using alert feature
     alert("Image Descriptions:\n\n" +
           "1. " + image1Alt + "\n" +
           "2. " + image2Alt + "\n" +
