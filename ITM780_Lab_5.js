@@ -72,9 +72,9 @@ function toggleColorScheme() {
 
 // Function to displayAltText()
 function displayAltText() {
-    const image1_Alt = document.getElementById('image1').alt;
-    const image2_Alt = document.getElementById('image2').alt;
-    const image3_Alt = document.getElementById('image3').alt;
+    image1_Alt = document.getElementById('image1').alt;
+    image2_Alt = document.getElementById('image2').alt;
+    image3_Alt = document.getElementById('image3').alt;
 
     // Show alt-text using alert feature
     alert(" Alternate Descriptions:\n\n" +
