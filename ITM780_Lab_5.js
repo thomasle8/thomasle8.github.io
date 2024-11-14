@@ -59,7 +59,7 @@ function toggleColorScheme() {
     } 
     else 
     {
-        // Set to high-contrast, colorblind-friendly colors
+        // Set to high-contrast, colorblind colors
         content.style.backgroundColor = 'yellow';  // Light background
         content.style.color = 'blue';  // Dark text
         
