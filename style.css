@@ -72,5 +72,35 @@ footer {
 }
 
 
+/*Font Size Buttons*/
 
+#fontSizeButtons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensures buttons appear above other content */
+}
+
+#fontSizeButtons button {
+    margin-right: 5px; /* Adds space between the buttons */
+}
+
+/*Padding around content*/
+.main-content{
+    padding-top: 20px;
+}
+
+/*Color Scheme Button*/
+#colorSchemeButton {
+    position: absolute;
+    top: 50px; /* Adjust to position the button under the font size buttons */
+    right: 10px; /* Aligns the button to the right */
+    z-index: 1000; /* Ensures it appears above other content */
+}
+
+/* Image Gallery Styling */
+#imageGallery {
+    display: block;
+    margin: 0 auto;
+}
 
