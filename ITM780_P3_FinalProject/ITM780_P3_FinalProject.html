@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thomas Le's Personal Portfolio Website</title>
+        <link rel="stylesheet" href="P3style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+<!---   <script src="" defer></script> -->        
+    </head>
+    
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>4th Year TMU Student</p>
+                    <h1>Hi, I'm <span>Thomas</span><br>From Toronto</h1>
+                </div>
+            </div>
+        </div>
+
+<!------------------------About---------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="P3images/Thomas Le's Image.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a keen and hardworking business technology management student seeking an opportunity with a progressive organization. 
+                            I have a strong sense of responsibility and duty of care as demonstrated from my previous experience. 
+                            I believe in emotional intelligence and building strong relationships with others. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Creating sources of code</li>
+                                <li><span>SQL</span><br>Designing functional queries</li>
+                                <li><span>Tableau</span><br>Designing detailed visuals</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Produce Clerk at Loblaws</li>
+                                <li><span>2018 - 2019</span><br>Salesman at Home Hardware</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>BCOMM at Toronto Metropolitan University</li>
+                                <li><span>2017 - 2021</span><br>OSSD at Northern Secondary School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------------------Contact---------------------------------->
+        <div id="contact">
+            <div class="container">
+                 <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> thomas.le@torontomu.ca</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +1(647)-123-1234</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/thnl/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="" class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+</html>
