@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -18,6 +22,16 @@ body{
     background-position: center;
 }
 
+.fontSizeButtons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    margin-right: 5px;
+    z-index: 1000; /* Ensures buttons appear above other content */
+}
+
 .container{
     padding: 10px 10%;
 }
@@ -25,8 +39,9 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
 }
 
 nav ul li{
@@ -197,4 +212,36 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     background-color: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
 }
