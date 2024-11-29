@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Thomas Le's Portfolio</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="ITM780_Lab_5.js" defer></script>
-</head>
+    <head>
+        <title>Thomas Le's Portfolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+        rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="description" content="Thomas Le's Portfolio">
+        <meta name="keywords" content="Thomas, Le, Toronto, Metropolitan, University">
+        <meta name="author" content="Thomas Le">
+        <link rel="stylesheet" href="style.css">
+        <script src="ITM780_Lab_5.js" defer></script>
+    </head>
 
-<body>  
-    <div class="main-content" id="content">
-        <h1>Thomas Hoang Nguyen Le</h1>
-        <hr>
-    
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="https://thomasle8.github.io/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Home</a></li>
-                    <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">About</a></li>
-                    <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
-                    <li><a href="https://thomasle8.github.io/contact.html" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
-                </ul>
-            </nav>
-            <hr>
-        </div>   
 
-        <div>
-            <img src="images/Thomas Le's Image.jpg" id="profileImage" alt="Thomas Le's Profile Image" onclick="enlargeImage()" style="width: 300px;">
-            <!--Button to enter name-->
-            <div id="buttonContainer">
-                <button onclick="promptForName()">Enter Your Name</button>
-                <div id="output"></div>
-            </div>
+    <body>  
+        <div class="main-content" id="content">
+            <h1>Thomas Hoang Nguyen Le</h1>
             <hr>
-        </div>
         
-        <section>
-            <h2>Audio File</h2>
-            <article>
-                <audio controls="controls" src="ITM780_Lab_8.m4a">
-                    Your browser does not support the HTML5 audio element.
-                </audio>
-                <figcaption>
-                    Le, T. (2024). <em>ITM780_Lab_8</em> [Audio file].
-                </figcaption>
-            </article>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Photo Gallery</h2>
-            <figure>
-                <img src="quarter.jpg" alt="A close-up of a quarter." id="image1" style="width: 300px";>
-                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
-            </figure>
-
-            <figure>
-                <img src="loonie.jpg" alt="A close-up of a loonie." id="image2" style="width: 300px";>
-                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
-            </figure>
-
-            <figure>
-                <img src="toonie.jpg" alt="A close-up of a toonie." id="image3" style="width: 300px";>
-                <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
-            </figure> 
-
-        </section>
-
-        <div id="altTextButttonContainer">
-            <button onclick="displayAltText()">Show Image Descriptions</button>
-        </div>
-
-        <div>
-            <h2>Education</h2>
-            <ul>
-                <h3><li>Toronto Metropolitan University</li></h3>
-                <dl>
-                    <p>September 2021 - <strong>Present</strong></p>
-                    <h3><li>Northern Secondary School</li></h3>
-                    <p>September 2017 - June 2021</p>
-                </dl>
-            </ul>
-            <hr>
-        </div>
-
-        <div>
-            <h2>Program</h2>
-            <ul>
-                <dl>
-                    <h3><li>Business Technology Management</li></h3>                
-                    <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
-                        to prepare one to be able to communicate these effectively in a real business setting.</p>
-                </dl>
-            </ul>
-            <hr>
-        </div>
-
-        <div>
-            <h2>Completed Course</h2>
-            <ul>
-                <dl>
-                    <h3><li>ITM200: Fundamentals of Programming</li></h3>
-                    <p>This course proved to be very easy to complete and useful as it opened many more career opportunities.</p>
-                </dl> 
-            </ul>
-            <hr>
-        </div>
-        
-        <div>
-            <h2>Educational Awards</h2>
-            <ol>
-                <dl>
-                    <h3><li>Renewable Entrance Scholarship</li></h3>
-                    <p>Issued by Ted Rogers School of Management at Toronto Metropolitan University - July 2021</p>
-                    <h3><li>Ontario Scholar Award</li></h3>
-                    <p>Issued by Northern Secondary School - June 2021</p>
-                </dl>
-            </ol>
-            <hr>
-        </div>
-        
-        <div>
-            <h2>Extra-curricular Activities</h2>
-            <ul>
-                <h3><li>Karate Club</li></h3>
-            </ul>
-            <hr>
-        </div>
-
-        <footer>
             <div>
-                <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
-            </div>
-            <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
-        </footer>
-    </div>
-    
-    <!--Buttons to control font size-->
-    <div id="fontSizeButtons">
-        
-        <button onclick="changeFontSize (2)">Increase Text Size</button>
-        <button onclick="changeFontSize (-2)">Decrease Text Size</button>
-    </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://thomasle8.github.io/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Home</a></li>
+                        <li><a href="https://www.linkedin.com/in/thnl/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">LinkedIn</a></li>
+                        <li><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Program</a></li>
+                        <li><a href="https://thomasle8.github.io/contact.html" onmouseover="mouseoverHandler(this)" onmouseout="mouseoutHandler(this)">Contact</a></li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>   
 
-    <!--Button to toggle color scheme-->
-    <div id="colorSchemeButton">
-        <button onclick="toggleColorScheme()">High-Contrast Color Scheme</button>
-    </div>
-</body>
+            <div>
+                <img src="images/Thomas Le's Image.jpg" id="profileImage" alt="Thomas Le's Profile Image" onclick="enlargeImage()" style="width: 300px;">
+                <!--Button to enter name-->
+                <div id="buttonContainer">
+                    <button onclick="promptForName()">Enter Your Name</button>
+                    <div id="output"></div>
+                </div>
+                <hr>
+            </div>
+            
+            <section>
+                <h2>Audio File</h2>
+                <article>
+                    <audio controls="controls" src="ITM780_Lab_8.m4a">
+                        Your browser does not support the HTML5 audio element.
+                    </audio>
+                    <figcaption>
+                        Le, T. (2024). <em>ITM780_Lab_8</em> [Audio file].
+                    </figcaption>
+                </article>
+                <hr>
+            </section>
+
+            <section>
+                <h2>Photo Gallery</h2>
+                <figure>
+                    <img src="quarter.jpg" alt="A close-up of a quarter." id="image1" style="width: 300px";>
+                    <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="loonie.jpg" alt="A close-up of a loonie." id="image2" style="width: 300px";>
+                    <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="toonie.jpg" alt="A close-up of a toonie." id="image3" style="width: 300px";>
+                    <figcaption>Taken on November 12, 2024, at a home in North York.</figcaption>
+                </figure> 
+
+            </section>
+
+            <div id="altTextButttonContainer">
+                <button onclick="displayAltText()">Show Image Descriptions</button>
+            </div>
+
+            <div>
+                <h2>Education</h2>
+                <ul>
+                    <h3><li>Toronto Metropolitan University</li></h3>
+                    <dl>
+                        <p>September 2021 - <strong>Present</strong></p>
+                        <h3><li>Northern Secondary School</li></h3>
+                        <p>September 2017 - June 2021</p>
+                    </dl>
+                </ul>
+                <hr>
+            </div>
+
+            <div>
+                <h2>Program</h2>
+                <ul>
+                    <dl>
+                        <h3><li>Business Technology Management</li></h3>                
+                        <p>The program provides an understanding of how to analyze business needs, design appropriate technology-based processes and solutions 
+                            to prepare one to be able to communicate these effectively in a real business setting.</p>
+                    </dl>
+                </ul>
+                <hr>
+            </div>
+
+            <div>
+                <h2>Completed Course</h2>
+                <ul>
+                    <dl>
+                        <h3><li>ITM200: Fundamentals of Programming</li></h3>
+                        <p>This course proved to be very easy to complete and useful as it opened many more career opportunities.</p>
+                    </dl> 
+                </ul>
+                <hr>
+            </div>
+            
+            <div>
+                <h2>Educational Awards</h2>
+                <ol>
+                    <dl>
+                        <h3><li>Renewable Entrance Scholarship</li></h3>
+                        <p>Issued by Ted Rogers School of Management at Toronto Metropolitan University - July 2021</p>
+                        <h3><li>Ontario Scholar Award</li></h3>
+                        <p>Issued by Northern Secondary School - June 2021</p>
+                    </dl>
+                </ol>
+                <hr>
+            </div>
+            
+            <div>
+                <h2>Extra-curricular Activities</h2>
+                <ul>
+                    <h3><li>Karate Club</li></h3>
+                </ul>
+                <hr>
+            </div>
+
+            <footer>
+                <div>
+                    <a href="https://thomasle8.github.io/">Thomas Le's Portfolio</a>
+                </div>
+                <p><small><i>Copyright &copy; 2024 Thomas Hoang Nguyen Le. All Rights Reserved.</i></small></p>
+            </footer>
+        </div>
+        
+        <!--Buttons to control font size-->
+        <div id="fontSizeButtons">
+            
+            <button onclick="changeFontSize (2)">Increase Text Size</button>
+            <button onclick="changeFontSize (-2)">Decrease Text Size</button>
+        </div>
+
+        <!--Button to toggle color scheme-->
+        <div id="colorSchemeButton">
+            <button onclick="toggleColorScheme()">High-Contrast Color Scheme</button>
+        </div>
+    </body>
 </html>
